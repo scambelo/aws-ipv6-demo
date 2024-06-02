@@ -4,5 +4,11 @@ This repository provides a sample architecture to demonstrate the use of IPv6 in
 
 ![IPv6 Architecture](img/IPv6-architecture.drawio.png "IPv6 Architecture")
 
+For the sake of simplicity and cost reduction this architecture makes use of only one availability zone.
+
+## Deployment
+
+To deploy this demo
+
 ## License
 This project is licensed under the [MIT License](LICENSE).
