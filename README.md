@@ -8,7 +8,7 @@ For the sake of simplicity and cost reduction, this architecture makes use of on
 
 ## Deployment
 
-This Demo comes preconfigured with the IPv4 CIDR `10.10.10.0/24`. If you wish to change this CICDR, edit the `vpc_cidr` variable in the file `params.auto.tfvars`.
+This Demo comes preconfigured with the IPv4 CIDR `10.10.10.0/24`. If you wish to change this CIDR, edit the `vpc_cidr` variable in the file `params.auto.tfvars`.
 
 To deploy this demo first intialize terraform.
 
