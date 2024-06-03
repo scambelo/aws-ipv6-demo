@@ -22,10 +22,16 @@ resource "aws_route_table_association" "pri" {
   route_table_id = aws_route_table.pri.id
 }
 
-resource "aws_route" "pub_dfl" {
+resource "aws_route" "pub_ipv4_dfl" {
   route_table_id         = aws_route_table.pub.id
   destination_cidr_block = "0.0.0.0/0"
   gateway_id             = aws_internet_gateway.igw.id
+}
+
+resource "aws_route" "pub_ipv6_dfl" {
+  route_table_id              = aws_route_table.pub.id
+  destination_ipv6_cidr_block = "::/0"
+  gateway_id                  = aws_internet_gateway.igw.id
 }
 
 resource "aws_route" "pri_ipv6_dfl" {
